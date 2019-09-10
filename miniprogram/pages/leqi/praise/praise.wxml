@@ -1,2 +1,4 @@
 <!--miniprogram/pages/leqi/praise/praise.wxml-->
-<text>受到老师表扬</text>
+<view>
+  <text>受到老师表扬或其他奖励，视情况加积分，最多10分</text>
+</view>

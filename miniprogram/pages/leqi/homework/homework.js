@@ -5,15 +5,27 @@ Page({
    * Page initial data
    */
   data: {
-    start_time: new Date(),
-    end_time: new Date()  
+    start_time: null,
+    end_time: null
   },
-
+  padZero(n){
+    if(n<10)
+      return "0"+n;
+    return n;
+  },
+  getCurrentTime(){
+    var curTime = new Date();
+    return this.padZero(curTime.getHours())+":"+this.padZero(curTime.getMinutes());
+  },
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    var _this = this
+    this.setData({
+      start_time: _this.getCurrentTime(),
+      end_time: _this.getCurrentTime()
+    })
   },
 
   bindStartTimeChange: function (e) {

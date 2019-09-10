@@ -1,8 +1,11 @@
-<view>
-  <text>张乐麒积分:{{leqi_points}}</text>
-  <button bindtap="logHomeWork" id="homework">记录家庭作业</button>
-  <button bindtap="logHomeWork" id="xueersi">记录学而思作业</button>
-  <button bindtap="logHomeWork" id="angli">记录昂立英语作业</button>
-  <button bindtap="logHomeWork" id="guanglu">记录广路小学作业</button>
-  <button bindtap="logHomeWork" id="praise">记录老师表扬</button>
+<view style="display: flex; flex-direction:column">
+  <text>张乐麒当前总积分:{{leqi_points}}</text>
+  <text>张乐麒本周积分:{{leqi_points}}</text>
+  <view style="display:block">
+    <button bindtap="logHomeWork" id="homework">记录家庭作业</button>
+    <button bindtap="logHomeWork" id="xueersi">记录学而思作业</button>
+    <button bindtap="logHomeWork" id="angli">记录昂立英语作业</button>
+    <button bindtap="logHomeWork" id="guanglu">记录广路小学作业</button>
+    <button bindtap="logHomeWork" id="praise">记录老师表扬</button>
+  </view>
 </view>
