@@ -1,12 +1,18 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/leqi/leqi",
+    "pages/leqi/homework/homework",
+    "pages/leqi/xueersi/xueersi",
+    "pages/leqi/guanglu/guanglu",
+    "pages/leqi/angli/angli",
+    "pages/leqi/praise/praise"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "快乐麒麟",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

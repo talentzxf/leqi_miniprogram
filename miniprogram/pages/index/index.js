@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var app = getApp();
 Page({
     data: {
-        motto: '点击 “编译” 以构建',
+        motto: '好好学习，天天向上',
         userInfo: {},
         hasUserInfo: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -12,6 +12,14 @@ Page({
         wx.navigateTo({
             url: '../logs/logs'
         });
+    },
+    jumpLeqi: function(){
+        wx.navigateTo({
+          url: '../leqi/leqi'
+        })
+    },
+    showLog: function(){
+      console.log("Pressed")
     },
     onLoad: function () {
         var _this = this;

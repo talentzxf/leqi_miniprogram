@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<view class="main_view">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -7,7 +7,8 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="users">
+    <button bindtap="jumpLeqi">张乐麒</button>
+    <button bindtap="jumpLelin">邱乐麟</button>
   </view>
 </view>
